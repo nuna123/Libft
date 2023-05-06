@@ -15,6 +15,7 @@
 /*
 	appends item to char * array and re allocates the space.
 	original arr is freed
+	NOTE: ITEM has to be freeable
 */
 char	**ft_arrappend(char **arr, char *to_append)
 {
