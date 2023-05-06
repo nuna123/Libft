@@ -13,21 +13,15 @@
 #include "libft.h"
 
 /*
-	appends item to char * array and re allocates the space.
-	original arr is freed
+	frees items of an array of pointers and frees the arr itself
 */
-char	**ft_arrappend(char **arr, char *to_append)
+
+void	ft_arrfree(void **arr)
 {
-	char	**ret;
-	int		i;
+	int	i;
 
 	i = -1;
-	ret = malloc (sizeof (char *) * (ft_arrlen((void **) arr) + 2));
 	while (arr[++i])
-		ret[i] = arr[i];
-	ret [i] = to_append;
-	ret [i + 1] = NULL;
+		free (arr[i]);
 	free (arr);
-	arr = ret;
-	return (ret);
 }
