@@ -24,7 +24,7 @@ char	**ft_arrappend(char **arr, char *to_append)
 
 	i = -1;
 	ret = malloc (sizeof (char *) * (ft_arrlen((void **) arr) + 2));
-	while (arr[++i])
+	while (arr && arr[++i])
 		ret[i] = arr[i];
 	ret [i] = to_append;
 	ret [i + 1] = NULL;

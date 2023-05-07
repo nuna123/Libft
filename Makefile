@@ -21,7 +21,7 @@ SRCS =	ft_arrappend.c ft_arrfree.c ft_lstadd_front.c ft_putchar_fd.c ft_strmapi.
 		ft_isalnum.c ft_lstnew.c ft_strchr.c ft_tolower.c \
 		ft_isalpha.c ft_lstsize.c ft_strdup.c ft_toupper.c \
 		ft_isascii.c ft_memchr.c ft_striteri.c get_next_line.c \
-		ft_isdigit.c ft_memcmp.c ft_strjoin.c main.c \
+		ft_isdigit.c ft_memcmp.c ft_strjoin.c \
 		ft_isprint.c ft_memcpy.c ft_strlcat.c \
 		ft_itoa.c ft_memmove.c ft_strlcpy.c \
 		ft_lstadd_back.c ft_memset.c ft_strlen.c \

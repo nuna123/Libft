@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 
 	i = 0;
 	src_len = ft_strlen(src);
-	if (size < 1)
+	if (size < 1 || !src)
 		return (src_len);
 	while (src[i] && i < size - 1)
 	{
